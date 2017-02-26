@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/images/XZCALogo.ico">
+    <title>行知计算机协会</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Roboto, "STHeiti", "微软雅黑", sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script>
+    WebFontConfig = {
+        google: {families: ['Roboto:400,300,500:latin']}
+    };
+    (function () {
+        let wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        let s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+</script>
+</body>
+</html>
