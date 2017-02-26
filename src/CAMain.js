@@ -7,12 +7,14 @@ import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import muiTheme from "./CABaseTheme";
 import CAToolbar from "./components/CAToolbar";
 import CAJumbotron from "./components/CAJumbotron";
-import CAAbout from "./components/CAAbout";
+import CAIntro from "./components/CAIntro";
+import CACards from "./components/CACards";
+import CAFooter from "./components/CAFooter";
 
 //Used for handle tap event because this project uses components which were provided by Material-UI
 injectTapEventPlugin();
 
-class App extends React.Component {
+class CAMain extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -20,14 +22,18 @@ class App extends React.Component {
     render() {
         return (
             <MuiThemeProvider muiTheme={muiTheme}>
-                <div>
-                    <CAToolbar/>
-                    <CAJumbotron/>
-                    <CAAbout/>
+                <div id="app">
+                    <CAToolbar id="toolbar"/>
+                    <CAJumbotron id="jumbotron"/>
+                    <div id="more">
+                        <CAIntro id="introduction"/>
+                        <CACards id="cards"/>
+                    </div>
+                    <CAFooter id="footer"/>
                 </div>
             </MuiThemeProvider>
         );
     }
 }
 
-export default App;
+export default CAMain;

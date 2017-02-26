@@ -8,7 +8,7 @@ import RaisedButton from "material-ui/RaisedButton";
 const style = {
     container: {
         padding: "48px 24px",
-        boxSizing: "box-border"
+        height: "85vh"
     },
     content: {
         margin: "auto",
@@ -32,8 +32,8 @@ const style = {
     }
 };
 
-const CAJumbotron = () => (
-    <div id="jumbotron">
+const CAJumbotron = (props) => (
+    <div id={props.id}>
         <Paper style={style.container} rounded={false}>
             <div style={style.content}>
                 <img style={style.logo} src="images/XZCALogo.svg"/>

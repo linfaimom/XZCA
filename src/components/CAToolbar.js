@@ -72,7 +72,7 @@ class CAToolbar extends React.Component {
     render() {
         let drawer = this.generateDrawer();
         return (
-            <div id="toolbar">
+            <div id={this.props.id}>
                 <AppBar style={style.toolbar}
                         iconElementRight={
                             <IconMenu iconButtonElement={<IconButton><MoreVertIcon/></IconButton>}
