@@ -7,18 +7,17 @@ import RaisedButton from "material-ui/RaisedButton";
 
 const style = {
     container: {
-        padding: "48px 24px",
-        height: "85vh"
+        paddingBottom: "48px",
+        height: "100vh",
+        display: "flex"
     },
     content: {
         margin: "auto",
-        textAlign: "center",
-        color: "white",
-        maxWidth: "575px"
+        textAlign: "center"
     },
     logo: {
-        width: "200",
-        height: "200"
+        width: "300px",
+        height: "300px"
     },
     primaryText: {
         fontWeight: "300",
@@ -28,7 +27,7 @@ const style = {
         fontWeight: "300",
         fontSize: "20px",
         lineHeight: "28px",
-        margin: "28px 0"
+        margin: "28px auto"
     }
 };
 
@@ -36,7 +35,7 @@ const CAJumbotron = (props) => (
     <div id={props.id}>
         <Paper style={style.container} rounded={false}>
             <div style={style.content}>
-                <img style={style.logo} src="images/XZCALogo.svg"/>
+                <img style={style.logo} src="images/XZCALogo.svg" alt="协会徽标"/>
                 <h1 style={style.primaryText}>行知计算机协会</h1>
                 <h2 style={style.secondaryText}>
                     我们志同道合，我们于此相遇相知<br/>

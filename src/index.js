@@ -7,5 +7,5 @@ ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={CAMain}/>
     </Router>,
-    document.getElementById('root')
+    document.getElementById("root")
 );
