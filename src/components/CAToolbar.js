@@ -10,7 +10,7 @@ import MoreVertIcon from "material-ui/svg-icons/navigation/more-vert";
 import ToolIcon from "material-ui/svg-icons/action/build";
 import DownloadIcon from "material-ui/svg-icons/file/cloud-download";
 import TutorialIcon from "material-ui/svg-icons/av/library-books";
-import Menu from "material-ui/Menu";
+import {List, ListItem} from "material-ui/List";
 import MenuItem from "material-ui/MenuItem";
 import {grey800} from "material-ui/styles/colors";
 
@@ -44,11 +44,11 @@ class CAToolbar extends React.Component {
 
     generateMenu() {
         return (
-            <Menu menuItemStyle={style.drawerMenuItem}>
-                <MenuItem leftIcon={<ToolIcon/>} primaryText="工具"/>
-                <MenuItem leftIcon={<DownloadIcon/>} primaryText="资源"/>
-                <MenuItem leftIcon={<TutorialIcon/>} primaryText="教程"/>
-            </Menu>
+            <List menuItemStyle={style.drawerMenuItem}>
+                <ListItem leftIcon={<ToolIcon/>} primaryText="工具"/>
+                <ListItem leftIcon={<DownloadIcon/>} primaryText="资源"/>
+                <ListItem leftIcon={<TutorialIcon/>} primaryText="教程"/>
+            </List>
         );
     }
 
