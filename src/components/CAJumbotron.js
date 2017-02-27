@@ -35,7 +35,7 @@ const CAJumbotron = (props) => (
     <div id={props.id}>
         <Paper style={style.container} rounded={false}>
             <div style={style.content}>
-                <img style={style.logo} src="images/XZCALogo.svg" alt="协会徽标"/>
+                <img style={style.logo} src="images/XZCALogo.ico" alt="协会徽标"/>
                 <h1 style={style.primaryText}>行知计算机协会</h1>
                 <h2 style={style.secondaryText}>
                     我们志同道合，我们于此相遇相知<br/>
