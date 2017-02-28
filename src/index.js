@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {Router, Route, hashHistory} from "react-router";
-import CAMain from "./CAMain";
+import CAMain from "./components/CAMain";
 
 ReactDOM.render(
     <Router history={hashHistory}>

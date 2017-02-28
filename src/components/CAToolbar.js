@@ -12,21 +12,6 @@ import DownloadIcon from "material-ui/svg-icons/file/cloud-download";
 import TutorialIcon from "material-ui/svg-icons/av/library-books";
 import {List, ListItem} from "material-ui/List";
 import MenuItem from "material-ui/MenuItem";
-import {grey800} from "material-ui/styles/colors";
-
-const style = {
-    toolbar: {
-        boxShadow: "rgba(0, 0, 0, 0.117647) 0px 10px 8px"
-    },
-    drawerTitle: {
-        lineHeight: "64px",
-        fontSize: "18px",
-        color: "white",
-        marginBottom: "8px",
-        paddingLeft: "16px",
-        backgroundColor: grey800
-    }
-};
 
 class CAToolbar extends React.Component {
     constructor(props) {
@@ -44,7 +29,7 @@ class CAToolbar extends React.Component {
 
     generateMenu() {
         return (
-            <List menuItemStyle={style.drawerMenuItem}>
+            <List>
                 <ListItem leftIcon={<ToolIcon/>} primaryText="工具"/>
                 <ListItem leftIcon={<DownloadIcon/>} primaryText="资源"/>
                 <ListItem leftIcon={<TutorialIcon/>} primaryText="教程"/>
@@ -54,7 +39,7 @@ class CAToolbar extends React.Component {
 
     generateDrawer() {
         let drawerTitle = (
-            <div style={style.drawerTitle}>
+            <div className="drawer-title">
                 行知计算机协会
             </div>
         );
@@ -73,7 +58,7 @@ class CAToolbar extends React.Component {
         let drawer = this.generateDrawer();
         return (
             <div id={this.props.id}>
-                <AppBar style={style.toolbar}
+                <AppBar className="toolbar"
                         iconElementRight={
                             <IconMenu iconButtonElement={<IconButton><MoreVertIcon/></IconButton>}
                                       anchorOrigin={{horizontal: "left", vertical: "top"}}

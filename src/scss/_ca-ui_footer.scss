@@ -1,0 +1,11 @@
+.footer-container {
+  @extend .common-container;
+  display: flex;
+  background-color: $ca-color-dark;
+}
+
+.footer-site-info {
+  margin: auto;
+  text-align: center;
+  color: $ca-color-white;
+}

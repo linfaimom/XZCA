@@ -1,0 +1,23 @@
+.jumbotron-container {
+  @extend .common-container;
+  background-color: #303030;
+  padding-bottom: $ca-padding-24 * 2;
+  height: 100vh;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+  margin-bottom: $ca-padding-24 * 2;
+}
+
+.primary-text {
+  font-weight: $ca-font-weight;
+}
+
+.secondary-text {
+  @extend .primary-text;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 28px auto;
+}

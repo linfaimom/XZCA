@@ -5,11 +5,11 @@ import React from "react";
 import injectTapEventPlugin from "react-tap-event-plugin";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import muiTheme from "./CABaseTheme";
-import CAToolbar from "./components/CAToolbar";
-import CAJumbotron from "./components/CAJumbotron";
-import CAIntro from "./components/CAIntro";
-import CACards from "./components/CACards";
-import CAFooter from "./components/CAFooter";
+import CAToolbar from "./CAToolbar";
+import CAJumbotron from "./CAJumbotron";
+import CAIntro from "./CAIntro";
+import CACards from "./CACards";
+import CAFooter from "./CAFooter";
 
 //Used for handle tap event because this project uses components which were provided by Material-UI
 injectTapEventPlugin();

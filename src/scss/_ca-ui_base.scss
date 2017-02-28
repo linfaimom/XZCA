@@ -1,0 +1,29 @@
+// reset
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Roboto, "STHeiti", "微软雅黑", sans-serif;
+}
+
+//紧贴浮动元素，变相的实现消除浮动。
+.clear {
+  overflow: hidden;
+  width: 100%
+}
+
+.content {
+  color: $ca-color-white;
+  margin: auto;
+  text-align: center;
+}
+
+.common-container {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: $ca-padding-24;
+  display: flex;
+}

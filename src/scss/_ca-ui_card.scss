@@ -1,0 +1,25 @@
+.card {
+  width: 300px;
+  margin: $ca-margin-8;
+}
+
+.card-float {
+  position: relative;
+  float: left;
+  right: 50%;
+}
+
+.card-header {
+  background-color: $ca-color-grey;
+  color: $ca-color-white;
+  text-align: center;
+  padding: $ca-padding-16;
+}
+
+.float-container {
+  padding-top: $ca-padding-24;
+  padding-bottom: $ca-padding-24;
+  position: relative;
+  float: left;
+  left: 50%;
+}
