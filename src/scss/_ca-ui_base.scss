@@ -4,13 +4,13 @@
 }
 
 body {
-  font-family: Roboto, "STHeiti", "微软雅黑", sans-serif;
+  font-family: Roboto, "STHeiti", "Microsoft YaHei UI Light", sans-serif;
 }
 
-//紧贴浮动元素，变相的实现消除浮动。
+// to clear the float through the way container wrap the float elements
 .clear {
   overflow: hidden;
-  width: 100%
+  width: 100%;
 }
 
 .content {
